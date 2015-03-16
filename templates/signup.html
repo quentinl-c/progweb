@@ -1,0 +1,29 @@
+{# l4/templates/signup.html: #}
+<html>
+	<form method = "post"  action="/blog/signup">
+		<h2>Sign up !</h2>
+		<br>
+		<label> username
+		<input type="text" name ="username" value={{user}}>
+		</label>
+		<div style="color : red">{{er_user}}</div>
+		<br>
+		<label> password
+		<input type="text" name ="password"value="">
+		</label>
+		<div style="color : red">{{er_pass}}</div>
+		<br>
+		<label> verify
+		<input type="text" name ="verify" value="">
+		</label>
+		<div style="color : red">{{er_verif}}</div>
+		<br>
+		<label> email
+		<input type="text" name ="email" value={{mail}}>
+		</label>
+		<div style="color : red">{{er_email}}</div>
+		<br>
+		<br>
+		<input type ="submit">
+	</form>
+</html>
